@@ -1,17 +1,25 @@
 body {
   margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .task-title {
   color: tomato;
   text-decoration: underline;
-  margin-left: 40px;
 }
 
-.task-list {
+ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
+
+/* .task-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
 
 .task-list__link {
   font-size: 2em;
@@ -26,8 +34,6 @@ body {
   grid-template-rows: auto;
   column-gap: 10px;
   list-style: none;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .js-gallery__item {
@@ -45,10 +51,6 @@ body {
 }
 
 /* ========================================= TASK NO.4 ========================================*/
-#counter {
-  margin-left: 40px;
-}
-
 #counter button {
   width: 60px;
   height: 30px;
