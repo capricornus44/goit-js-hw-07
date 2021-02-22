@@ -18,3 +18,28 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* ========================================= TASK NO.3 ========================================*/
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  column-gap: 10px;
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.js-gallery__item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.js-gallery__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
