@@ -1,6 +1,11 @@
 body {
   margin: 0;
-  padding-top: 50px;
+}
+
+.task-title {
+  color: tomato;
+  text-decoration: underline;
+  margin-left: 40px;
 }
 
 .task-list {
