@@ -7,9 +7,11 @@ inputValidationRef.addEventListener('focus', () => {
 inputValidationRef.addEventListener('blur', onInputValidation);
 
 function onInputValidation() {
-  if (inputValidationRef.value.length !== Number(inputValidationRef.getAttribute('data-length')))
+  if (inputValidationRef.value.length !== Number(inputValidationRef.getAttribute('data-length'))) {
     inputValidationRef.classList.add('invalid');
-  inputValidationRef.classList.add('valid');
+  } else {
+    inputValidationRef.classList.add('valid');
+  }
 }
 
 /*
