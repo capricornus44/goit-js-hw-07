@@ -1,16 +1,18 @@
 const inputValidationRef = document.querySelector('#validation-input');
 
-inputValidationRef.addEventListener('focus', () => {
-  inputValidationRef.classList = '';
-});
+// inputValidationRef.addEventListener('focus', () => {
+//   inputValidationRef.classList = '';
+// });
 
 inputValidationRef.addEventListener('blur', onInputValidation);
 
 function onInputValidation() {
   if (inputValidationRef.value.length !== Number(inputValidationRef.getAttribute('data-length'))) {
     inputValidationRef.classList.add('invalid');
+    inputValidationRef.classList.remove('valid');
   } else {
     inputValidationRef.classList.add('valid');
+    inputValidationRef.classList.remove('invalid');
   }
 }
 
